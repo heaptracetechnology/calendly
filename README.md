@@ -1,8 +1,8 @@
 # _Calendly_ OMG Microservice
 
 [![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
-[![Build Status](https://travis-ci.com/omg-services/calendly.svg?branch=master)](https://travis-ci.com/omg-services/freshdesk)
-[![codecov](https://codecov.io/gh/omg-services/calendly/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/freshdesk)
+[![Build Status](https://travis-ci.com/omg-services/calendly.svg?branch=master)](https://travis-ci.com/omg-services/calendly)
+[![codecov](https://codecov.io/gh/omg-services/calendly/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/calendly)
 
 An OMG service for calendly.
 
