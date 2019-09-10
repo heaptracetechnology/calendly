@@ -93,5 +93,5 @@ actions:
 environment:
   API_KEY:
     help: |
-      Get from https://dashboard.fullcontact.com/
+      Get from https://developer.calendly.com/docs/getting-your-authentication-token
     type: string
