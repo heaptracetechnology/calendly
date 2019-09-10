@@ -1,0 +1,97 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ["python", "/app/app.py"]
+health:
+  http:
+    path: /health
+    port: 8000    
+info:
+  version: 1.0.2
+  title: calendly
+  description: This is a UUID service
+actions:
+  create:
+    help: Create a webhook subscription
+    http:
+      path: /create
+      method: post
+      port: 8000
+      contentType: application/json
+    arguments:  
+      url:
+        type: string
+        in: requestBody
+        help: Sample url where events need to create.   
+      events:
+        type: string
+        in: requestBody
+        help: Sample url where events need to create.           
+    output:
+      type: map
+      contentType: application/json  
+  subscribe:
+    help: Generate a 
+    http:
+      path: /subscribe
+      method: post
+      port: 8000
+      contentType: application/json
+    arguments:  
+      hooksId:
+        type: string
+        in: requestBody
+        help: Sample url where events need to create.      
+    output:
+      type: map
+      contentType: application/json
+  subscribeList:
+    help: Generate a 
+    http:
+      path: /subscribe/list
+      method: get
+      port: 8000
+      contentType: application/json   
+    output:
+      type: map
+      contentType: application/json
+  delete:
+    help: Generate a 
+    http:
+      path: /delete
+      method: post
+      port: 8000
+      contentType: application/json
+    arguments:  
+      hooksId:
+        type: string
+        in: requestBody
+        help: Sample url where events need to create.      
+    output:
+      type: map
+      contentType: application/json
+  eventType:
+    help: Generate a 
+    http:
+      path: /event/type
+      method: get
+      port: 8000
+      contentType: application/json       
+    output:
+      type: map
+      contentType: application/json
+  about:
+    help: Generate a 
+    http:
+      path: /about
+      method: get
+      port: 8000
+      contentType: application/json    
+    output:
+      type: map
+      contentType: application/json                        
+environment:
+  API_KEY:
+    help: |
+      Get from https://dashboard.fullcontact.com/
+    type: string
