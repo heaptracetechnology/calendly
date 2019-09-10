@@ -10,7 +10,7 @@ An OMG service for calendly.
 
 ##### Create webhook subscription 
 ```coffee
-calendly create  events=<HOOKs_ID> url=<URL> 
+calendly create  events=<HOOKS_ID> url=<URL> 
 { "id": 497954 }
 ```
 ##### Get webhook subscription 
