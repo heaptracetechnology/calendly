@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "uuid"
+name = "calendly"
 version = "1.0.0"
 description = ""
 authors = ["support@storyscript.io"]
